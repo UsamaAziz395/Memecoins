@@ -7,7 +7,7 @@ import About from './pages/About';
 import Swap from './pages/Swap';
 import HowToBuy from './pages/HowToBuy';
 import Stake from './pages/Stake';
-import More from './pages/More';
+import More from './Pages/More'
 import Home from './Pages/Home';
 
 function App() {
