@@ -1,8 +1,8 @@
-
 import React from 'react';
 import StakeCard from '../../Component/StakeCard/StakeCard';
 import { stakeData } from '../../Data/stakeData';
 import MarqueeLabel from '../../Component/Label/Label';
+import DarkLabel from '../../Component/Darklabel/Darklabel';
 
 import cloudleft from '../../assets/images/main/cloudleft.png';
 import cloudright from '../../assets/images/main/cloudright.png';
@@ -69,9 +69,19 @@ const StakeSection = () => {
 
       </div>
 
-      {/* Label at Bottom Overlapping */}
-      <div className="relative w-full z-30 -mb-12 md:-mb-16">
-        <MarqueeLabel />
+      {/* Labels Area - Overlapping Style */}
+      <div className="relative w-full z-30 -mb-16 md:-mb-20 flex flex-col items-center justify-center mt-8">
+        
+        {/* Dark Label (Nichey/Background) */}
+        <div className="w-full relative z-10 translate-y-10 md:translate-y-14">
+          <DarkLabel />
+        </div>
+
+        {/* Yellow Marquee Label (Upar/Foreground) */}
+        <div className="w-full relative z-20 -mt-12 md:-mt-16">
+          <MarqueeLabel />
+        </div>
+
       </div>
 
     </section>

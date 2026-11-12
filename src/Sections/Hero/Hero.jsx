@@ -5,6 +5,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 import Heroimg from '../../assets/images/Hero/Heroimg.png'; 
 import Navbar from '../../Sections/Navbar/Navbar'; 
 import MarqueeLabel from '../../Component/Label/Label';
+import DarkLabel from '../../Component/Darklabel/Darklabel';
 import Address from '../../Component/Address/Address'; 
 
 const HeroSection = () => {
@@ -36,12 +37,10 @@ const HeroSection = () => {
             $DOGCOIN
           </h1>
 
-          {/* Paragraph spacing fixed (mb-0) */}
           <p className="text-white leading-relaxed mb-0 max-w-md text-sm md:text-base">
             Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
           </p>
 
-          {/* Address spacing fixed (mt-0, mb-4) */}
           <div className="w-full max-w-md mb-4 mt-0">
             <Address />
           </div>
@@ -69,8 +68,19 @@ const HeroSection = () => {
 
       </div>
 
-      <div className="relative w-full z-30 -mb-16 md:-mb-20">
-        <MarqueeLabel />
+      {/* Labels Area */}
+      <div className="relative w-full z-30 -mb-16 md:-mb-20 flex flex-col items-center justify-center">
+        
+        {/* Dark Label - Pushed further down */}
+        <div className="w-full relative z-10 translate-y-16 md:translate-y-24">
+          <DarkLabel />
+        </div>
+
+        {/* Normal Label - Overlapping */}
+        <div className="w-full relative z-20 -mt-12 md:-mt-16">
+          <MarqueeLabel />
+        </div>
+
       </div>
 
     </section>

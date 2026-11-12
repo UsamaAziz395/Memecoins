@@ -1,12 +1,18 @@
-
 import React from 'react';
 import { buyNowData } from '../../Data/buyNowData';
 import Rightimg from '../../assets/images/main/Rightimg.png';
 import leftimg from '../../assets/images/main/leftimg.png';
+// import DarkLabel from '../../Component/Darklabel/Darklabel';
+import MarqueeLabel from '../../Component/Label/Label';
 
 const BuyNowSection = () => {
   return (
     <section className="relative w-full overflow-hidden bg-[#111111] flex flex-col items-center justify-center">
+
+      {/* Dark Label set at the top */}
+      <div className="w-full relative z-40 -mt-4 md:-mt-8 mb-4">
+        {/* <DarkLabel /> */}
+      </div>
 
       {/* Main Content Area */}
       <div className="relative w-full max-w-7xl flex flex-col items-center justify-center py-16 px-4 z-10">
@@ -19,18 +25,19 @@ const BuyNowSection = () => {
           }}
         ></div>
 
-      {/* Left Cloud */}
-<img
-  src={leftimg}
-  alt="Left Cloud"
-  className="absolute left-[5%] bottom-8 w-16 sm:w-20 md:w-28 lg:w-32 h-auto object-contain z-20"
-/>
-{/* Right Cloud */}
-<img
-  src={Rightimg}
-  alt="Right Cloud"
-  className="absolute right-[3%] top-[25%] w-16 sm:w-20 md:w-28 lg:w-32 h-auto object-contain z-20"
-/>
+        {/* Left Cloud */}
+        <img
+          src={leftimg}
+          alt="Left Cloud"
+          className="absolute left-[5%] bottom-8 w-16 sm:w-20 md:w-28 lg:w-32 h-auto object-contain z-20"
+        />
+
+        {/* Right Cloud */}
+        <img
+          src={Rightimg}
+          alt="Right Cloud"
+          className="absolute right-[3%] top-[25%] w-16 sm:w-20 md:w-28 lg:w-32 h-auto object-contain z-20"
+        />
 
         {/* Content Wrapper */}
         <div className="relative z-30 flex flex-col items-center text-center">
@@ -74,4 +81,3 @@ const BuyNowSection = () => {
 };
 
 export default BuyNowSection;
- 
