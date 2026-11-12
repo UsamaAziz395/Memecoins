@@ -2,7 +2,7 @@ import React from 'react';
 // Importing exact icons from react-icons
 import { FaYoutube, FaTiktok, FaDiscord, FaInstagram } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
-import communityimg from '../../assets/images/community/communityimg.png'
+import Communityimg from '../../assets/images/ommunity/Communityimg.png'
 
 const CommunitySection = () => {
   return (
@@ -14,7 +14,7 @@ const CommunitySection = () => {
         {/* Left Side: Dog Image */}
         <div className="relative w-full md:w-[45%] flex justify-center md:justify-end z-10 mt-8 md:mt-0">
           <img 
-            src={communityimg} 
+            src={Communityimg} 
             alt="Dogecoin Mascot" 
             className="w-64 md:w-[20rem] h-auto object-contain"
           />
