@@ -2,7 +2,7 @@ import React from 'react';
 // Importing exact icons from react-icons
 import { FaYoutube, FaTiktok, FaDiscord, FaInstagram } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
-import Communityimg from '../../assets/images/ommunity/Communityimg.png'
+import Communityimg from '../../assets/images/community/Communityimg.png'
 
 const CommunitySection = () => {
   return (
