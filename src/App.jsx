@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './Sections/Navbar/Navbar';
 
 // Pages Import
-import About from './pages/About';
+import AboutSection from './Pages/About';
 import Swap from './pages/Swap';
 import HowToBuy from './pages/HowToBuy';
 import Stake from './pages/Stake';
@@ -19,7 +19,7 @@ function App() {
       {/* Routes Define Karein */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<AboutSection />} />
         <Route path="/swap" element={<Swap />} />
         <Route path="/how-to-buy" element={<HowToBuy />} />
         <Route path="/stake" element={<Stake />} />
