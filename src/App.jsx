@@ -1,12 +1,9 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Navbar from './Sections/Navbar/Navbar';
-
-// Pages Import
+import { Routes, Route } from 'react-router-dom'
 import AboutSection from './Pages/About';
-import Swap from './pages/Swap';
-import HowToBuy from './pages/HowToBuy';
-import Stake from './pages/Stake';
+import Swap from './Pages/Swap';
+import HowToBuy from './Pages/HowToBuy';
+import Stake from './Pages/Stake';
 import More from './Pages/More'
 import Home from './Pages/Home';
 
