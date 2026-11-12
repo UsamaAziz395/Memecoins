@@ -16,18 +16,18 @@ const StakeSection = () => {
         <div className="absolute inset-0 bg-[url('/path-to-bg-pattern.png')] opacity-20 pointer-events-none"></div>
       </div>
 
-      {/* Left Cloud */}
+      {/* Left Cloud - Hidden on mobile (hidden md:block) */}
       <img
         src={cloudleft}
         alt="Left Cloud"
-        className="absolute top-[12%] left-[-2%] w-20 sm:w-24 md:w-28 lg:w-36 h-auto object-contain z-[5]"
+        className="hidden md:block absolute top-[12%] left-[-2%] w-20 sm:w-24 md:w-28 lg:w-36 h-auto object-contain z-[5]"
       />
 
-      {/* Right Cloud */}
+      {/* Right Cloud - Hidden on mobile (hidden md:block) */}
       <img
         src={cloudright}
         alt="Right Cloud"
-        className="absolute top-[15%] right-[-1%] w-20 sm:w-24 md:w-28 lg:w-36 h-auto object-contain z-[5]"
+        className="hidden md:block absolute top-[15%] right-[-1%] w-20 sm:w-24 md:w-28 lg:w-36 h-auto object-contain z-[5]"
       />
 
       {/* Main Content Area */}
